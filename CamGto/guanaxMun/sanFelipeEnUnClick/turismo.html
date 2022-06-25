@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF 1CLK Turismo</title>
+    <link rel="shortcut icon" href="img/sfclick7.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="index.html" class="logo1"><img src="images/5.png" alt=""></a>
+
+    <a href="#" class="logo"><span>SF </span>Turismo</a>
+
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="#packages">Recomendados</a>
+        <a href="#services">Servicios</a>
+        <a href="#review">Información</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+   
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="#">register now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Conoce las marabillas de San Felipe</h3>
+        <p>Descubre lugares y aventuras</p>
+        <a href="#packages" class="btn">Conoce más</a>
+    </div>
+<!--controles video-->
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+<!--  
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+-->
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>V</span>
+        <span>I</span>
+        <span>S</span>
+        <span>I</span>
+        <span>T</span>
+        <span>A</span>
+        <span>N</span>
+        <span>O</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="TURISMO/lugares-para-visitar.html">
+            <img src="images/lugares_para_visitar1.png" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> LUGARES PARA VISITAR EN EL MUNICIPIO </h3>
+                <p>Ven y conoce los lugares marabillosos con los que cuenta nuestro Município</p>
+                <div class="stars">
+                </div>
+                <div class="price">  <span> </span> </div>
+                <a href="TURISMO/lugares-para-visitar.html" class="btn"> Conose más</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="TURISMO/comunidades-paisajes.html">
+            <img src="images/comunidades1.png" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> LUGARES PARA VISITAR EN COMUNIDADES DE SAN FELIPE </h3>
+                <p>Ven y descubre nuestras comunidades y sus lugares hermosos</p>
+                <div class="stars">
+                </div>
+                <div class="price">  <span> </span> </div>
+                <a href="TURISMO/comunidades-paisajes.html" class="btn"> Conocelas </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="TURISMO/historias-y-relatos.html">
+            <img src="images/historias y relatos.png" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> HISTORIAS Y RELATOS </h3>
+                <p>Nuestro Município, lleno de magia, Historias y relatos conoce algunas de ellas</p>
+                <div class="stars">
+                </div>
+                <div class="price">  <span></span> </div>
+                <a href="TURISMO/historias-y-relatos.html" class="btn"> Conocelas </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="TURISMO/rutas-y-aventuras.html">
+            <img src="images/aventuras.png" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> RUTAS Y AVENTURAS </h3>
+                <p>Descubre lugares hermosos para el campismo, paseos en bisicleta, aventuras y más..</p>
+                <div class="stars">
+                </div>
+                <div class="price">  <span> </span> </div>
+                <a href="TURISMO/rutas-y-aventuras.html" class="btn"> Descrube hoy</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="PAGINAS_SF_1CLK/Agencia_de_viajes/index.html">
+            <img src="images/g-6.jpg" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Guia turistica y agencia de viajes </h3>
+                <p>Viaja con nosotros y descrube los hermosos lugares de nuestros municipios y otros lugares de forma segura y comoda</p>
+                <div class="stars">
+                </div>
+                <div class="price"> Excelentes costos <span> Seguridad y Confort </span> </div>
+                <a href="PAGINAS_SF_1CLK/Agencia_de_viajes/index.html" class="btn"> Contactanos </a>
+            </div>
+        </div>
+
+        <div class="box">
+            <a href="TURISMO/comingSoonPage/index.html">
+            <img src="images/viajes_virtuales1.png" alt="">
+            </a>
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Viajes Virtuales </h3>
+                <p>Realiza recorridos virtuales por las rutas de aventura, recomenadadas y enamorate para que muy pronto nos visites</p>
+                <div class="stars">
+                </div>
+                <div class="price">  <span></span> </div>
+                <a href="TURISMO/comingSoonPage/index.html" class="btn">Viaja Ahora</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+<!--
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>E</span>
+        <span>R</span>
+        <span>V</span>
+        <span>I</span>
+        <span>C</span>
+        <span>I</span>
+        <span>O</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="COMERCIO/hoteles-y-hospedaje.html"><i class="fas fa-hotel"></i></a>
+            <h3>Donde Hospedarte</h3>
+            <p>Te damos las mejores recomendaciones en hospedaje para que tu estancia sea lo mas comoda posible</p>
+        </div>
+        <div class="box">
+            <a href="COMERCIO/restaurantes-y-comida.html"><i class="fas fa-utensils"></i></a>
+            <h3>Comida y Vevida</h3>
+            <p>Compartimos contigo lugares con exquisita comida y vevida que puedes degustar durante tu visita</p>
+        </div>
+        <div class="box">
+            <a href="COMERCIO/"><i class="fas fa-bullhorn"></i></a>
+            <h3>Seguridad en tus visitas</h3>
+            <p>Contactanos contamos con viajes con guias expertos que cuidaran de ti en tu visita guiada</p>
+        </div>
+        <div class="box">
+            <a href=""><i class="fas fa-globe-asia"></i></a>
+            <h3>Conoce otras partes de México y el Mundo</h3>
+            <p>Tenemos una agencia de viaje a tu dispocicion para recomendarte viajes a cualquier lugar a exelentes costos </p>
+        </div>
+        <div class="box">
+            <a href=""><i class="fas fa-plane"></i></a>
+            <h3>Transporte</h3>
+            <p>Contamos con transporte seguro a cualquier destino que busques, si somos tu contacto, nosotros te cuidamos</p>
+        </div>
+        <div class="box">
+            <a href=""><i class="fas fa-hiking"></i></a>
+            <h3>Viajes de aventura</h3>
+            <p>Si lo tuyo es la aventura contamos con tur´s por lugares poco explorados de la region, para que practiques: Campismo, Deportes exemos, aventuras y más..</p>
+        </div>
+
+    </div>
+
+</section>
+-->
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>E</span>
+        <span>C</span>
+        <span>O</span>
+        <span>M</span>
+        <span>E</span>
+        <span>N</span>
+        <span>D</span>
+        <span>A</span>
+        <span>D</span>
+        <span>O</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="PAGINAS_SF_1CLK/LugaresParaVisitar/CASA HIDALGO/images/SF6.jpg" alt="">
+            <div class="content">
+                <h3>LA CASA HIDALGO</h3>
+                <p>Uno de los lugares iconicos de nuestro San Felipe, donde vivio parte de su vida el cura Miguel Hidalgo y Costilla.</p>
+                <a href="#" class="btn">Más informacion</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="PAGINAS_SF_1CLK/LugaresParaVisitar/SantoSanMiguelito/images/images.jpg" alt="">
+            <div class="content">
+                <h3>Templo de San Miguelito</h3>
+                <p>Visita el templo donde se venera el Santo Patrono del Pueblo</p>
+                <a href="#" class="btn">Leer Más</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="PAGINAS_SF_1CLK/LugaresParaVisitar/CUEVA LONGA/images/c-l-1.png" alt="">
+            <div class="content">
+                <h3>Cueva Longa</h3>
+                <p>Si te gusta la aventura y convivir con la naturaleza visita la cueva Longa</p>
+                <a href="#" class="btn">Leer Más</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="PAGINAS_SF_1CLK/LugaresParaVisitar/HACIENDA DE JARAL DE BERRIOS/images/home_secc_0.jpg" alt="">
+            <div class="content">
+                <h3>Hacienda de Jaral</h3>
+                <p>Visita una de las haciendas mas antiguas de la zona y deleitate con el mezcal de la comunidad</p>
+                <a href="#" class="btn">Leer Más</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/pagPrincRecomen/panales.png" alt="">
+            <div class="content">
+                <h3>Los Panales</h3>
+                <p>Otra maravilla de la Naturaleza dentro del municipio, explora y conoce</p>
+                <a href="PAGINAS_SF_1CLK/LugaresParaVisitar/LosPanales/" class="btn">Leer Más</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/jardinPrimcipak.png" alt="">
+            <div class="content">
+                <h3>Jardin Principal</h3>
+                <p>Disfruta de la tranquilidad y lindo ambiente de nuestro municipio</p>
+                <a href="#" class="btn">Leer Más</a>
+            </div>
+        </div>
+    
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>P</span>
+        <span>a</span>
+        <span>t</span>
+        <span>r</span>
+        <span>o</span>
+        <span>c</span>
+        <span>i</span>
+        <span>n</span>
+        <span>a</span>
+        <span>d</span>
+        <span>o</span>
+        <span>r</span>
+        <span>e</span>
+        <span>s</span>
+
+        
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/5.png" alt="">
+                    <h3>Anunciate</h3>
+                    <p>somos una plataforma independiente, sin financiamientos de ningun tipo, buscamos patrocinadores para hacer crecer este proyecto</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/5.png" alt="">
+                    <h3>Anunciate</h3>
+                    <p>somos una plataforma independiente, sin financiamientos de ningun tipo, buscamos patrocinadores para hacer crecer este proyecto</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/5.png" alt="">
+                    <h3>Anunciate</h3>
+                    <p>somos una plataforma independiente, sin financiamientos de ningun tipo, buscamos patrocinadores para hacer crecer este proyecto</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/5.png" alt="">
+                    <h3>Anunciate</h3>
+                    <p>somos una plataforma independiente, sin financiamientos de ningun tipo, buscamos patrocinadores para hacer crecer este proyecto</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>o</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form  action="https://formspree.io/f/xoqrdnzw"
+        method="POST">
+        <div class="inputBox">
+            <input type="text" placeholder="nombre completo" class="box" name="name">
+            <input type="email" placeholder="e-mail" class="box" name="_replyto">
+        </div>
+        <div class="inputBox">
+            <input type="tel" placeholder="Telefono" class="box" name="tel">
+            <input type="text" placeholder="Titulo">
+        </div>
+        <textarea  placeholder="Escribe tu mensaje" id="" cols="30" rows="10" name="message"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer"> 
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>SUCURSALES</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> San Felipe </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Jaral de Berrios </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Los Barcos </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> La Quemada </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Dll </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Inicio </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Servicios </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> SF CLICK </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Galeria </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> price </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Clientes</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Contacto </a>
+        </div>
+
+        <div class="box">
+            <h3>informacion de contacto</h3>
+            <a href="tel:4286902266"> <i class="fas fa-phone"></i> 428-690-2266 </a>
+            <a href="tel:4281175664"> <i class="fas fa-phone"></i> 428-1175-664 </a>
+            <a href="mailto:jetse30@gmail.com"> <i class="fas fa-envelope"></i> jetse30@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> San Felipe,Gto.,México, C.P. 37600 </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://www.facebook.com/jooperez2010/?ref=pages_you_manage"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://twitter.com/AUTEGT"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-everardo-p%C3%A9rez-estrada-3b5a4534/"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+    <div class="credit">&copy; created by <span>PZ Agencia de Marketing Digtal</span> | all rights reserved </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

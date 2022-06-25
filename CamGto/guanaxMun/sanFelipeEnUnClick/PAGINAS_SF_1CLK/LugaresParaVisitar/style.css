@@ -1,0 +1,351 @@
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+
+  /*CAMBIOS INDEPENDIENTES*/
+  
+  .event-container .event1 {
+    background: rgb(231, 93, 93);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event1 .event-left {
+    background-image: url(images/negretes4.png);
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event1 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event1 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event1 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event1 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event1 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event1 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+
+  /*TERMINA SECCION*/
+
+  /*SECCION 2*/
+  .event-container .event2 {
+    background: rgb(231, 93, 93);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event2 .event-left {
+    background-image: url(images/negretes4.png);
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(136, 84, 84);
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event2 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event2 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event2 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event2 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event2 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event2 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 2*/
+
+  /*SECCION 3*/
+  .event-container .event3 {
+    background: rgb(231, 93, 93);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event3 .event-left {
+    background-image: url(images/negretes4.png);
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event3 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event3 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event3 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event3 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event3 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event3 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 3*/
+
+  /*SECCION 4*/
+  .event-container .event4 {
+    background: rgb(231, 93, 93);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event4 .event-left {
+    background-image: url(images/negretes4.png);
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event4 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event4 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event4 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event4 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event4 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event4 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 4*/
+
+  /*SECCION 5*/
+  .event-container .event5 {
+    background: rgb(231, 93, 93);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event5 .event-left {
+    background-image: url(images/negretes4.png);
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event5 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event5 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event5 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event5 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event5 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event5 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 5*/
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
+  

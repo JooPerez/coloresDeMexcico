@@ -1,0 +1,1529 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+@font-face{
+    font-family:groovy;
+    src: url(../fonts/aAbstractGroovy.ttf);
+  }
+
+  @font-face{
+    font-family:danger;
+    src: url(../fonts/Another\ Danger\ Slanted\ -\ Demo.otf);
+  }
+  
+  @font-face{
+    font-family:jmh;
+    src: url(../fonts/JMH\ Typewriter-Black.ttf);
+  }
+
+  @font-face{
+    font-family:jungle;
+    src: url(../fonts/Jungle\ Roar\ Bold.ttf);
+  }
+
+  @font-face{
+    font-family:kamryn;
+    src: url(../fonts/Kamryn\ 3D\ Italic\ D.otf);
+  }
+
+  @font-face{
+    font-family:movement;
+    src: url(../fonts/Movement.ttf);
+  }
+
+  @font-face{
+    font-family:omegle;
+    src: url(../fonts/OMEGLE.ttf);
+  }
+
+  @font-face{
+    font-family:pamela;
+    src: url(../fonts/Pamela.ttf);
+  }
+
+  @font-face{
+    font-family:witch;
+    src: url(../fonts/Season\ of\ the\ Witch\ Black.ttf);
+  }
+
+  @font-face{
+    font-family:tequila;
+    src: url(../fonts/Tequilla\ Sunrise.ttf);
+  }
+
+  @font-face{
+    font-family:bambank;
+    src: url(../fonts/The\ Bambank\ Script.ttf);
+  }
+
+:root{
+    --main-color:#3867d6;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #eec40a;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 5rem;
+}
+
+body{
+    background-color: #222;
+    background-image: url(../../img/fondoNG.png);
+    background-repeat: repeat;
+    background-size:contain;
+    /*background: rgb(161, 253, 233);*/
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    background:var(--main-color);
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 10000;
+    background: rgb(235, 220, 8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+}
+
+.header .logo1 img{
+    height: 4rem;
+  }
+
+.header .logo{
+    font-family:groovy;
+    font-weight: bolder;
+    color:#fff;
+    font-size: 2.5rem;
+}
+
+.header .logo span{
+    font-family:movement;
+    color:var(--main-color);
+    font-size: 3.5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color:#fff;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover{
+    color:var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6rem;
+    margin:2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3{
+    color:#fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .home-slider .swiper-slide{
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 25rem;
+    width:35rem;
+}
+
+.home .home-slider .swiper-slide img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+#map {
+    height: 80vh;
+}
+
+.service .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+
+.service .box-container .box{
+    border-radius: .5rem;
+    background:#333;
+    text-align: center;
+    padding:2.5rem;
+}
+
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    background:var(--main-color);
+    color:#fff;
+}
+
+.service .box-container .box h3{
+    font-size: 2rem;
+    color:#fff;
+    padding:1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.4rem;
+    color:#eee;
+    line-height: 1.8;
+}
+
+/*enlaces con calendario*/
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  /*CAMBIOS INDEPENDIENTES*/
+  
+  .event-container .event1 {
+    background: rgb(101, 122, 119);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event1 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/PraxedisGuerrero/images/prax2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event1 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event1 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event1 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event1 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event1 .event-right .event-description {
+    font-size: 14px;
+}
+  
+  .event1 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 18px;
+  }
+  
+  .event1 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+
+  /*TERMINA SECCION*/
+
+  /*SECCION 2*/
+  .event-container .event2 {
+    background: rgba(56, 145, 4, 0.692);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event2 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/MargaritaPazParedes/images/mar_p_p.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event2 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event2 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event2 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event2 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event2 .event-right .event-description {
+    font-size: 14px;
+}
+  
+  .event2 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event2 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 2*/
+
+  /*SECCION 3*/
+  .event-container .event3 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event3 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/Dr.EnriqueAlvares/images/DrEnrHdz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event3 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event3 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event3 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event3 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event3 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event3 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event3 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 3*/
+
+  /*SECCION 4*/
+  .event-container .event4 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event4 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/RamonAguirre/images/ram_ag.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event4 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event4 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event4 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event4 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event4 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event4 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event4 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 4*/
+
+  /*SECCION 5*/
+  .event-container .event5 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event5 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/RamiroMartínezPiña/images/ramiro1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event5 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event5 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event5 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event5 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event5 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event5 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event5 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*TERMINA SECCION 5*/
+
+  /*seccion6*/
+  .event-container .event6 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event6 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/ManuelBetancortCamino/images/ManuelBC1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event6 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event6 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event6 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event6 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event6 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event6 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event6 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*finSeccion6*/
+  /*seccion7*/
+  .event-container .event7 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event7 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/CynthiaPérezEstrada/images/cynthia1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event7 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event7 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event7 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event7 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event7 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event7 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event7 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*finSeccion7*/
+  /*seccion8*/
+  .event-container .event8 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event8 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/LilianaPérezEstrada/images/lilianaPE.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event8 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event8 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event8 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event8 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event8 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event8 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event8 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*finSeccion8*/
+  /*seccion9*/
+  .event-container .event9 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event9 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/JuanAntonioAguirreRosillo/images/juanAR1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event9 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event9 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event9 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event9 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event9 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event9 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event9 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*finSeccion9*/
+  /*Event10*/
+  .event-container .event10 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event10 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/Dr.EnriqueAlvares/images/DrEnrHdz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event10 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event10 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event10 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event10 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event10 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event10 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event10 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*EndEvent10*/
+  /*Event11*/
+  .event-container .event11 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event11 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/Dr.EnriqueAlvares/images/DrEnrHdz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event11 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event11 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event11 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event11 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event11 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event11 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event11 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*EndEvent11*/
+  /*Event12*/
+  .event-container .event12 {
+    background: rgb(195, 165, 250);
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 34px;
+    margin: 32px 0;
+  }
+  
+  .event12 .event-left {
+    background-image: url(../../PAGINAS_SF_1CLK/blog-personalidades/PERSONALIDADES/Dr.EnriqueAlvares/images/DrEnrHdz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: hard-light;
+    min-width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 34px 0 0 34px;
+  }
+  
+  .event12 .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event12 .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event12 .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event12 .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+
+  .event12 .event-right .event-description {
+      font-size: 14px;
+  }
+  
+  .event12 .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event12 .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  /*EndEvent12*/
+
+/*finaliza calendario*/
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+    padding:1rem;
+}
+
+.about .row .image img{ 
+    width: 100%;
+    border-radius: .5rem;
+    border:1rem solid #333;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#eee;
+    padding:1rem 0;
+    line-height: 2;
+}
+
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+}
+
+.gallery .box-container .box{
+    position: relative;
+    border:1rem solid #333;
+    border-radius: .5rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box:hover img{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.gallery .box-container .box .title{
+    position: absolute;
+    top:-10rem; left:0; right: 0;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.gallery .box-container .box:hover .title{
+    top:0;
+}
+
+.gallery .box-container .box .icons{
+    position: absolute;
+    bottom:-10rem; left:0; right: 0;
+    background:#333;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.gallery .box-container .box:hover .icons{
+    bottom: 0;
+}
+
+.gallery .box-container .box .icons a{
+    font-size: 2rem;
+    margin:.5rem 1rem;
+    color:#fff;
+}
+
+.gallery .box-container .box .icons a:hover{
+    color:var(--main-color);
+}
+
+.price .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.price .box-container .box{
+    padding:2rem 0;
+    background:#333;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box:hover{
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title{
+    background:var(--main-color);
+    color:#fff;
+    padding:1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount{
+    color:#fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-container .box ul{
+    list-style-type: none;
+    padding:1rem 0;
+}
+
+.price .box-container .box ul li{
+    font-size: 1.5rem;
+    color:#eee;
+    padding:1rem 0;
+}
+
+.price .box-container .box ul li i{
+    color:var(--main-color);
+    padding-right: .5rem;
+}
+
+.reivew .box{
+    border-radius: .5rem;
+    background: #333;
+    padding:2rem;
+    position: relative;
+}
+
+.reivew .box .fa-quote-right{
+    position: absolute;
+    top:2rem; right: 2rem;
+    color:var(--main-color);
+    font-size: 5rem;
+}
+
+.reivew .box .user{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    padding-bottom: 1rem;
+}
+
+.reivew .box .user img{
+    height:7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reivew .box .user h3{
+    font-size: 2rem;
+    color:#fff;
+}
+
+.reivew .box .user span{
+    font-size: 1.5rem;
+    color:#eee;
+}
+
+.reivew .box p{
+    line-height: 2;
+    color:#eee;
+    padding:.5rem 0;
+    font-size: 1.6rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin:1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea{
+    width: 100%;
+    background:#333;
+    border-radius: .5rem;
+    padding:1rem;
+    margin:.7rem 0;
+    font-size: 1.5rem;
+    color:#fff;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder{
+    color:#eee;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus{
+    background:#444;
+}
+
+.contact form .inputBox input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.footer{
+    background:#111;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding:1rem 0;
+    color:#fff;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    padding:1rem 0;
+    color:#eee;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color:var(--main-color);
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 1.5rem;
+    color:#fff;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #222;
+    color:#fff;
+    padding:2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+
+.theme-toggler{
+    position: fixed;
+    top:10rem; right:-20rem;
+    background: #333;
+    z-index: 1000;
+    width: 20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right:0;
+}
+
+.theme-toggler h3{
+    color:#fff;
+    padding:1rem 0;
+    font-size: 2rem;
+}
+
+.theme-toggler .buttons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top:0; left:-5.9rem;
+    padding:1.3rem 1.5rem;
+    background:#333;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-bars{
+        display: initial;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        border-top: .1rem solid #222;
+        background: #333;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    .header .navbar a{
+        display: flex;
+        background:#222;
+        border-radius: .5rem;
+        padding:1.3rem;
+        margin:1.3rem;
+        font-size: 2rem;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .home-slider .swiper-slide{
+        width: 27rem;
+    }
+
+    .contact form .inputBox input{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
